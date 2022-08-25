@@ -1,0 +1,1 @@
+$(document).ready(function(){invokeArrowButtonControls("home-blog-carousel","home-blog-card","blog-back-arrow","blog-forward-arrow")});

@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+	xmlns="http://www.w3.org/2000/svg" class="no-hover-fill">
+	<path d="M24 8H0V1.33333C0 0.596667 0.4475 0 1 0H23C23.5525 0 24 0.596667 24 1.33333V8Z" fill="#FD9840"/>
+	<path d="M24 8H0V16H24V8Z" fill="#FEFEFE"/>
+	<path d="M24 22.6667C24 23.4033 23.5525 24 23 24H1C0.4475 24 0 23.4033 0 22.6667V16H24V22.6667Z" fill="#1B8717"/>
+	<circle cx="12" cy="12" r="2" fill="#0A5AC2"/>
+</svg>
