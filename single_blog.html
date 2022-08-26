@@ -3,45 +3,59 @@
 
 <head>
 	<style>
-		* {
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
+		
 
-		}
+table{
+	 margin-left: auto;
+  margin-right: auto;
+
+}
 
 		.heading {
 			text-align: center;
 			font-size: 3rem;
 			margin-bottom: 1.5 rem;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.card-title {
+			font-size: 28px;
+			font-weight: bold;
 		}
 
 		#cards {
 
 			justify-content: space-around;
 			flex-wrap: wrap;
-			height: 70%;
+		
+			/* width: 70%; */
 
 		}
 
 		.card {
-			/* width: 70%; */
 
-			/* box-shadow: 0 0 4px 3px orangered; */
-			text-align: center;
 
-			margin-bottom: 2em;
-			border: none;
+			width: 70%;
+			margin-bottom: 10% !important;
+			margin: auto;
+			padding: 5%;
+			border: 0 !important;
+			/* margin: auto; */
+			background: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.1);
+
 
 
 		}
 
-		title {
-			font-size: 1.3rem;
-
-
+		.blog-logo {
+			height: 5rem;
+			width: 5rem;
+			object-fit: contain;
+			border-radius: 50%;
 		}
+
 
 		.category,
 		.price {
@@ -53,11 +67,14 @@
 		}
 
 		.images {
-			width: 100%;
-			height: 30%;
+			width: 70%;
+
+			object-fit: cover;
 			align-self: center;
 			margin-top: 5%;
+			margin-bottom: 5%;
 		}
+		
 	</style>
 	<!-- Menubar head Section -->
 	<meta charset="UTF-8">
@@ -70,7 +87,7 @@
 	<!-- This site is optimized with the Yoast SEO Premium plugin v17.9 (Yoast SEO v17.9) - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Nandi Nivesh:Home</title>
 	<link rel="stylesheet" href="css/headerfooter.css" media="all" data-minify="1">
-<link rel="stylesheet" href="css/page-style.css">
+	<link rel="stylesheet" href="css/page-style.css">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Blog Archive">
@@ -96,206 +113,165 @@
 
 
 	<div id="page" class="site">
-      <!-- Menubar Start -->
-      <header
-        id="header-mega-menu-wrapper"
-        class="top-0 z-50 w-full bg-white shadow-sm site-header fixed-top"
-      >
-        <div class="container relative bg-white">
-          <nav class="flex items-center lg:flex-wrap navbar">
-            <!-- Logo Menubar div -->
-            <div class="flex items-center nav-brand py-2 lg:order-3 lg:mx-auto">
-              <figure class="z-20 overflow-hidden bg-white">
-                <a href="index.html">
-                  <img
-                    width="15%"
-                    loading="lazy"
-                    src="images/nandi-logo-new.png"
-                    alt="Nandi"
-                    data-lazy-src="images/nandi-logo-new.png"
-                  /><noscript
-                    ><img
-                      width="15%"
-                      loading="lazy"
-                      src="images/nandi-logo-new.png"
-                      alt="nandi-logo"
-                  /></noscript>
-                </a>
-              </figure>
-            </div>
-            <!-- Logo Menubar Div end -->
+		<!-- Menubar Start -->
+		<header id="header-mega-menu-wrapper" class="top-0 z-50 w-full bg-white shadow-sm site-header ">
+			<div class="container relative bg-white fixed-top">
+				<nav class="flex items-center lg:flex-wrap navbar ">
+					<!-- Logo Menubar div -->
+					<div class="flex items-center nav-brand py-2 lg:order-3 lg:mx-auto">
+						<figure class="z-20 overflow-hidden bg-white">
+							<a href="index.html">
+								<img width="15%" loading="lazy" src="images/nandi-logo-new.png" alt="Nandi"
+									data-lazy-src="images/nandi-logo-new.png" /><noscript><img width="15%"
+										loading="lazy" src="images/nandi-logo-new.png" alt="nandi-logo" /></noscript>
+							</a>
+						</figure>
+					</div>
+					<!-- Logo Menubar Div end -->
 
-            <div class="z-10 nav-items bg-white lg:hidden ml-auto">
-              <div id="header-mega-menu" class="menu-style">
-                <ul
-                  id="headerMegaMenu"
-                  class="flex enroll-toggle align-items-start w-100"
-                >
-                  <li
-                    id="menu-item-73365"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73365"
-                  >
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li
-                    id="menu-item-73381"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73381"
-                  >
-                    <a href="about.html">About</a>
-                  </li>
-                  <li
-                    id="menu-item-73409"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73409"
-                  >
-                    <a href="#"
-                      >Services<i class="fa fa-caret-down d-inline" aria-hidden="true" ></i>
-                     
-                      </noscript
-                    ></a>
-                    <div class="fixed submenu-wrapper">
-                      <ul
-                        class="sub-menu container cursor-default px-4 py-8 lg:py-0 lg:px-0 menu-level-2"
-                      >
-                        <div class="flex items-start sm:block lg:flex-wrap">
-                          <li
-                            id="menu-item-73410"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73410"
-                          >
-                            <!-- <a href="#">Services</a> -->
-                            <div>
-                              <ul class="sub-menu">
-                                <li
-                                  id="menu-item-73411"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73411"
-                                >
-                                  <a href="contact.html">Mutual Funds</a>
-                                </li>
-                                <li
-                                  id="menu-item-73412"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73412"
-                                >
-                                  <a href="contact.html"
-                                    >Portfolio Management Service</a
-                                  >
-                                </li>
-                                <li
-                                  id="menu-item-73413"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73413"
-                                >
-                                  <a href="contact.html"
-                                    >Investment Advisory Product</a
-                                  >
-                                </li>
-                                <li
-                                  id="menu-item-73414"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73414"
-                                >
-                                  <a href="contact.html"
-                                    >Term Life Insurance</a
-                                  >
-                                </li>
-                                <li
-                                  id="menu-item-73415"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415"
-                                >
-                                  <a href="contact.html"
-                                    >Health Insurance</a
-                                  >
-                                </li>
-                                <li
-                                  id="menu-item-73415"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415"
-                                >
-                                  <a href="contact.html"
-                                    >Fixed Deposits</a
-                                  >
-                                </li>
-                                <li
-                                  id="menu-item-73415"
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415"
-                                >
-                                  <a href="contact.html"
-                                    >Structured Products</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                        </div>
-                      </ul>
-                    </div>
-                  </li>
-                  <li
-                    id="menu-item-73432"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432"
-                  >
-                    <a href="blog.html" class="active">Blog</a>
-                  </li>
-                  <li
-                    id="menu-item-73432"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432"
-                  >
-                    <a href="gallery.html">Gallery</a>
-                  </li>
-                  <li
-                    id="menu-item-73432"
-                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432"
-                  >
-                    <a href="newsletter.html">Newsletter</a>
-                  </li>
-                  <li
-                    id="menu-item-73467"
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-73467"
-                  >
-                    <a href="contact.html" >Contact</a>
-                  </li>
-                  <div class="p-1">
-                    <a href="https://portfolio.nandinivesh.com" class="btn btn-primary">Login</a>
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="hidden lg:block flex items-center lg:order-1 md:flex-row-reverse md:ml-0 relative search-control"
-            >
-              <button
-                class="ml-3 focus:outline-none navbar-toggler collapsed lg:ml-0 md:mr-4"
-                type="button"
-                data-toggle="collgse"
-                data-target="#navbarText"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span
-                  class="block mb-1 transition-all rotate-0 bg-gray-900 rounded icon-bar top-bar"
-                ></span>
-                <span
-                  class="block mb-1 transition-all bg-gray-900 rounded opacity-100 icon-bar middle-bar"
-                ></span>
-                <span
-                  class="block transition-all rotate-0 bg-gray-900 rounded icon-bar bottom-bar"
-                ></span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- End of menubar -->
-    </div>
-	<div id="cards" class="container mt-5">
+					<div class="z-10 nav-items bg-white lg:hidden ml-auto">
+						<div id="header-mega-menu" class="menu-style">
+							<ul id="headerMegaMenu" class="flex enroll-toggle align-items-start w-100">
+								<li id="menu-item-73365"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73365">
+									<a href="index.html">Home</a>
+								</li>
+								<li id="menu-item-73381"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73381">
+									<a href="about.html">About</a>
+								</li>
+								<li id="menu-item-73409"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73409">
+									<a href="#">Services<i class="fa fa-caret-down d-inline" aria-hidden="true"></i>
 
-		<!-- <h1>blog by id</h1> -->
-		<!-- <div class="card">
-            <h1 class="title">title</h1>
-            <img class="images"
-                src="https://render.fineartamerica.com/images/rendered/medium/canvas-print/15.5/20/mirror/break/images/artworkimages/medium/2/floral-lion-iii-balazs-solti-canvas-print.jpg"
-                alt="img1">
-            <p>description</p>
-            <p class="category">category</p>
-            <p class="price">price</p>
-        </div> -->
+										</noscript></a>
+									<div class="fixed submenu-wrapper">
+										<ul
+											class="sub-menu container cursor-default px-4 py-8 lg:py-0 lg:px-0 menu-level-2">
+											<div class="flex items-start sm:block lg:flex-wrap">
+												<li id="menu-item-73410"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73410">
+													<!-- <a href="#">Services</a> -->
+													<div>
+														<ul class="sub-menu">
+															<li id="menu-item-73411"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73411">
+																<a href="contact.html">Mutual Funds</a>
+															</li>
+															<li id="menu-item-73412"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73412">
+																<a href="contact.html">Portfolio Management Service</a>
+															</li>
+															<li id="menu-item-73413"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73413">
+																<a href="contact.html">Investment Advisory Product</a>
+															</li>
+															<li id="menu-item-73414"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73414">
+																<a href="contact.html">Term Life Insurance</a>
+															</li>
+															<li id="menu-item-73415"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415">
+																<a href="contact.html">Health Insurance</a>
+															</li>
+															<li id="menu-item-73415"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415">
+																<a href="contact.html">Fixed Deposits</a>
+															</li>
+															<li id="menu-item-73415"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73415">
+																<a href="contact.html">Structured Products</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</div>
+										</ul>
+									</div>
+								</li>
+								<li id="menu-item-73432"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432">
+									<a href="blog.html" class="active">Blog</a>
+								</li>
+								<li id="menu-item-73432"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432">
+									<a href="gallery.html">Gallery</a>
+								</li>
+								<li id="menu-item-73432"
+									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-73432">
+									<a href="newsletter.html">Newsletter</a>
+								</li>
+								<li id="menu-item-73467"
+									class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-73467">
+									<a href="contact.html">Contact</a>
+								</li>
+								<div class="p-1">
+									<a href="https://portfolio.nandinivesh.com" class="btn btn-primary">Login</a>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="hidden lg:block flex items-center lg:order-1 md:flex-row-reverse md:ml-0 relative search-control">
+						<button class="ml-3 focus:outline-none navbar-toggler collapsed lg:ml-0 md:mr-4" type="button"
+							data-toggle="collgse" data-target="#navbarText" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span
+								class="block mb-1 transition-all rotate-0 bg-gray-900 rounded icon-bar top-bar"></span>
+							<span
+								class="block mb-1 transition-all bg-gray-900 rounded opacity-100 icon-bar middle-bar"></span>
+							<span class="block transition-all rotate-0 bg-gray-900 rounded icon-bar bottom-bar"></span>
+						</button>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- End of menubar -->
 	</div>
+	
+	
 
+	<div id="cards" class=" container mt-5">
+
+			<div class="card container my-5 px-5">
+				<h1 class="card-title text-center my-5">${data1.title}</h1>
+				<div class="text-center">
+					<table class="text-left">
+						<tr>
+							<td rowspan="2" class="blog-logo">
+								<img class="blog-logo" src="./images/Rohit.jpg" alt="">
+							</td>
+							<td>&nbsp Rohit J. Gyanchandani</td>
+						</tr>
+						<tr>
+
+							<td>&nbsp ${new Date(data1.updated_at).toDateString()}</td>
+						</tr>
+					</table>
+				</div>
+
+
+				
+				<p class="">${data1.peragraph1}</p>
+
+				<img class="images" src=${data1.photo} alt="img1">
+
+				<p class="">${data1.peragraph2}</p>
+
+
+				<img class="images" src=${data1.photo} alt="img2">
+
+				<p class="">${data1.peragraph3}</p>
+
+
+				<img class="images" src=${data1.photo} alt="img1">
+
+
+
+
+			
+			</div>
+	</div>
 	<!-- #page -->
 
 	<footer class="section-footer">
@@ -423,10 +399,10 @@
 
 	<!--End Menubar Js Files -->
 
-
+	
 	<script>
 		id = localStorage.getItem('id')
-		// fetch(`https://7950-45-250-226-118.in.ngrok.io/api/v1/admin/getAllBlog?limit=10&pageNo=0`).then(
+		
 		fetch(`http://nandinivesh-api.shreekakajimasale.com/api/v1/admin/getBlogById/${id}`).then(
 			(data) => {
 				return data.json();
@@ -435,11 +411,66 @@
 			}).then((completedata) => {
 				console.log(completedata);
 
-				// console.log(completedata);
-				// document.getElementById('root').
-				//     innerHTML = completedata[2].title;
+				
 				let data1 = completedata.data;
-				data1 = `<div class="card mt-5">
+				if (data1.title === null) {
+					data1.title.style.display = 'none'
+				
+				}
+
+				data1 = `
+				
+			<div class="card container my-5 px-5">
+				<h1 class="card-title text-center mt-5">${data1.title}</h1>
+				<div class="text-center">
+					<table class="text-left my-5">
+						<tr>
+							<td rowspan="2" class="blog-logo">
+								<img class="blog-logo" src="./images/Rohit.jpg" alt="">
+							</td>
+							<td>&nbsp Rohit J. Gyanchandani</td>
+						</tr>
+						<tr>
+
+							<td>&nbsp ${new Date(data1.updated_at).toDateString()}</td>
+						</tr>
+					</table>
+				</div>
+
+
+				
+				<p class="">${data1.peragraph1 == 'null'  ? '':data1.peragraph1}</p>
+				
+
+				<img class="images" src=${data1.photo1 == 'null'  ? '':data1.photo} alt="img1">
+
+				<p class="">${data1.peragraph2 == 'null'  ? '':data1.peragraph2}</p>
+
+
+				<img class="images" src=${data1.photo1 == 'null'  ? '':data1.photo1} alt="img2">
+
+				<p class="">${data1.peragraph3 == 'null'  ? '':data1.peragraph3}</p>
+
+
+				<img class="images" src=${data1.photo3 == 'null'  ? '':data1.photo3} alt="img3">
+
+
+
+
+			
+			</div>
+				`
+			
+
+				document.getElementById("cards").innerHTML = data1;
+			}).catch((err) => {
+				console.log(err);
+			})
+	</script>
+
+<!-- 
+	data1 = `
+				<div class="card mt-5">
 						
             <h1 class="title">${data1.title}</h1>
 			 <p class="mt-3">${new Date(data1.updated_at).toDateString()}</p>
@@ -455,30 +486,7 @@
             <p class="mt-3>${data1.peragraph3}</p>
 			 <p class="mt-3>${data1.peragraph4}</p>
         </div>`
-				// 		completedata.data((data1) => {
-				// 			data1 += `<div class="card">
-
-				//     <h1 class="title">${data1.title}</h1>
-
-				//     <img class="images"
-				//         src=${data1.photo}
-				//         alt="img1">
-				//     <p>${data1.peragraph1}</p>
-				//     <img class="images"
-				//         src=${data1.photo1}
-				//         alt="img1">
-				//     <p class="category">${data1.peragraph2}</p>
-				//     <p class="price">${data1.price}</p>
-				// </div>`
-				// 		});
-
-				document.getElementById("cards").innerHTML = data1;
-			}).catch((err) => {
-				console.log(err);
-			})
-	</script>
-
-
+ -->
 </body>
 
 </html>

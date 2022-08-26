@@ -3,40 +3,59 @@
 
 <head>
 	<style>
-		* {
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
+		
 
-		}
+table{
+	 margin-left: auto;
+  margin-right: auto;
+
+}
 
 		.heading {
 			text-align: center;
 			font-size: 3rem;
 			margin-bottom: 1.5 rem;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.card-title {
+			font-size: 28px;
+			font-weight: bold;
 		}
 
 		#cards {
 
 			justify-content: space-around;
 			flex-wrap: wrap;
-			height: 70%;
+		
+			/* width: 70%; */
+
 		}
 
 		.card {
-			/* width: 70%; */
 
-			/* box-shadow: 0 0 4px 3px orangered; */
-			text-align: center;
 
-			margin-bottom: 2em;
-			border: none;
+			width: 70%;
+			margin-bottom: 10% !important;
+			margin: auto;
+			padding: 5%;
+			border: 0 !important;
+			/* margin: auto; */
+			background: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.1);
+
+
+
 		}
 
-		title {
-			font-size: 1.3rem;
+		.blog-logo {
+			height: 5rem;
+			width: 5rem;
+			object-fit: contain;
+			border-radius: 50%;
 		}
+
 
 		.category,
 		.price {
@@ -48,11 +67,14 @@
 		}
 
 		.images {
-			width: 100%;
-			height: 30%;
+			width: 70%;
+
+			object-fit: cover;
 			align-self: center;
 			margin-top: 5%;
+			margin-bottom: 5%;
 		}
+		
 	</style>
 	<!-- Menubar head Section -->
 	<meta charset="UTF-8">
@@ -433,39 +455,49 @@
 				// document.getElementById('root').
 				//     innerHTML = completedata[2].title;
 				let data1 = completedata.data;
-				data1 = `<div class="card mt-5">
-						
-            <h1 class="title">${data1.title}</h1>
-			 <p class="mt-3">${new Date(data1.updated_at).toDateString()}</p>
-			  <p >Posted By:&nbsp<i class="fa fa-user-secret" aria-hidden="true"></i> &nbsp Nandi Nivesh</p>
-            <img class="images"
-                src=${data1.photo}
-                alt="img1">
-            <p class="mt-3>${data1.peragraph1}</p>
-			 <p class="mt-3>${data1.peragraph2}</p>
-            <img class="images"
-                src=${data1.photo1}
-                alt="img1">
-            <p class="mt-3>${data1.peragraph3}</p>
-			 <p class="mt-3>${data1.peragraph4}</p>
-        </div>`
-				// 		completedata.data((data1) => {
-				// 			data1 += `<div class="card">
+				data1 = `
+				
+			<div class="card container my-5 px-5">
+				<h1 class="card-title text-center mt-5">${data1.title}</h1>
+				<div class="text-center">
+					<table class="text-left my-5">
+						<tr>
+							<td rowspan="2" class="blog-logo">
+								<img class="blog-logo" src="./images/Rohit.jpg" alt="">
+							</td>
+							<td>&nbsp Rohit J. Gyanchandani</td>
+						</tr>
+						<tr>
 
-				//     <h1 class="title">${data1.title}</h1>
+							<td>&nbsp ${new Date(data1.updated_at).toDateString()}</td>
+						</tr>
+					</table>
+				</div>
 
-				//     <img class="images"
-				//         src=${data1.photo}
-				//         alt="img1">
-				//     <p>${data1.peragraph1}</p>
-				//     <img class="images"
-				//         src=${data1.photo1}
-				//         alt="img1">
-				//     <p class="category">${data1.peragraph2}</p>
-				//     <p class="price">${data1.price}</p>
-				// </div>`
-				// 		});
 
+				
+				<p class="">${data1.peragraph1 == 'null'  ? '':data1.peragraph1}</p>
+				
+
+				<img class="images" src=${data1.photo1 == 'null'  ? '':data1.photo} alt="img1">
+
+				<p class="">${data1.peragraph2 == 'null'  ? '':data1.peragraph2}</p>
+
+
+				<img class="images" src=${data1.photo1 == 'null'  ? '':data1.photo1} alt="img2">
+
+				<p class="">${data1.peragraph3 == 'null'  ? '':data1.peragraph3}</p>
+
+
+				<img class="images" src=${data1.photo3 == 'null'  ? '':data1.photo3} alt="img3">
+
+
+
+
+			
+			</div>
+				`
+			
 				document.getElementById("cards").innerHTML = data1;
 			}).catch((err) => {
 				console.log(err);
